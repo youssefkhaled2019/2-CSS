@@ -105,7 +105,7 @@ font-family: 'Times New Roman', Times, serif;
 
 
 
-font-style: italic; [italic,oblique,normal] 
+font-style: italic; [italic,oblique,normal]       # font-size==line-height
 font-variant: small-caps; [normal,small-caps] 
 font-weight: bold;[bold,normal,100->900]
 
