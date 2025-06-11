@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* unvisited link */
+      a:link {
+        color: red;
+      }
+
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+      /* ==================================== */
+      .xx p {
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+      }
+
+      .xx:hover p {
+        display: block;
+      }
+      /* ===================== */
+      p:first-child {
+        color: blue;
+      }
+
+      p i:first-child {
+        color: blue;
+      }
+      p:first-child i {
+        color: blue;
+      }
+
+      /* ===================== */
+
+      input:focus {
+        background-color: yellow;
+      }
+
+
+
+      .focus {
+  width: 50%;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  border: 4px solid #ccc;
+}
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="default.asp" target="_blank">This is a link</a>
+    </div>
+    <hr />
+    <br />
+
+    <div class="xx">
+      Hover over this div element to show the p element
+      <p>Tada! Here I am!</p>
+    </div>
+    <hr />
+    <br />
+
+    <p>This is some text.</p>
+    <p>This is some text.</p>
+
+    <div>
+      <p>This is some text.</p>
+      <p>This is some text.</p>
+    </div>
+
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+  
+    <hr />
+    <br />
+
+    <!-- ------------------------ -->
+    <form action="/action_page.php" method="get">
+      First name: <input class="focus" type="text" name="fname" /><br /><br />
+      Last name: <input class="focus"type="text" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- ------------------------ -->
+  </body>
+</html>

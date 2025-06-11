@@ -50,3 +50,34 @@ We can divide CSS selectors into five categories:
      -#para1 {}
      -.center {}
      h1, h2, p {}      Grouping Selector
+
+
+ ==============================    
+ There are four different combinators in CSS:
+    1-Descendant combinator (space)   ex: div p {}
+    2-Child combinator (>)              ex: div > p {}
+    3-Next sibling combinator (+)       ex: div + p {}
+    4-Subsequent-sibling combinator (~)  ex: div ~ p {}
+==============================
+
+What are Pseudo-classes?   {:pseudo-class}
+
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+    Style an element when a user moves the mouse over it
+    Style visited and unvisited links differently
+    Style an element when it gets focus
+    Style valid/invalid/required/optional form elements
+==============================
+What are Pseudo-Elements?
+
+A CSS pseudo-element is used to style specific parts of an element.
+
+For example, it can be used to:
+
+    Style the first letter or line, of an element
+    Insert content before or after an element
+    Style the markers of list items
+    Style the viewbox behind a dialog box

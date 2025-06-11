@@ -499,6 +499,12 @@ content: attr(data-attr)
   - [Attribute*=Value] => Contains String  ex: Attribute="ffffValue"
   - [Attribute^=Value] => Start With A String  ex: Attribute="Value..." or Attribute="Value ..."
 
+
+  -:link {}
+  -:visited  {}
+  -:hover  {}
+  -:active  {}
+
   - :first-child
   - :last-child
   - :first-of-type
@@ -519,8 +525,48 @@ content: attr(data-attr)
   - :disabled
   - :required               input:required +span:before
   - :focus
+
+    
+    ::marker 
+    ::after
+    ::before 
   - ::selection
   - ::placeholder
+
+
+p::first-line {}  
+The following properties apply to the ::first-line pseudo-element:
+
+    font properties
+    color properties
+    background properties
+    word-spacing
+    letter-spacing
+    text-decoration
+    vertical-align
+    text-transform
+    line-height
+    clear
+
+Note: The ::first-letter pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-letter pseudo- element: 
+
+    font properties
+    color properties 
+    background properties
+    margin properties
+    padding properties
+    border properties
+    text-decoration
+    vertical-align (only if "float" is "none")
+    text-transform
+    line-height
+    float
+    clear
+
+
+The following CSS properties can be applied to ::selection: color, background, cursor, and outline.
 ---------------------------------------------------------
 # .parent > .child => Direct Child
       .parent
